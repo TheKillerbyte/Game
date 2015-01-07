@@ -1,2 +1,2 @@
-# Game
-My little Game
+# Libgdx-Game
+My small Libgdx game
