@@ -15,7 +15,7 @@ public class Splash extends ScreenAdapter {
    private static TestStarter game;
 
    public Splash(TestStarter game) {
-      this.game = game;
+	this.game = game;
    }
 
    @Override
@@ -29,14 +29,14 @@ public class Splash extends ScreenAdapter {
 
    @Override
    public void render(float delta) {
-      SpriteBatch batch = new SpriteBatch(4);
-      batch.begin();
-      batch.draw(new Texture(Gdx.files.internal("Textures/Loading_Screen.png")), 0, 0);
-      batch.end();
-      game.preInit();
-      game.init();
-      game.postInit();
-      game.setScreen(TestStarter.menu);
+	SpriteBatch batch = new SpriteBatch(4);
+	batch.begin();
+	batch.draw(new Texture(Gdx.files.internal("Textures/Loading_Screen.png")), 0, 0);
+	batch.end();
+	game.preInit();
+	game.init();
+	game.postInit();
+	game.setScreen(TestStarter.menu);
    }
 
 }
